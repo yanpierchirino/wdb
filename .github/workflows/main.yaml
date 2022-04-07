@@ -21,7 +21,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: docker build
         run: |
-          docker build -f ./server/Dockerfile -t $DOCKER_USER/wdb:1.0-$GITHUB_RUN_NUMBER
+          docker build -f /server/Dockerfile -t $DOCKER_USER/wdb:1.0-$GITHUB_RUN_NUMBER
       - name: docker push
         run: |
           docker push $DOCKER_USER/wdb:1.0-$GITHUB_RUN_NUMBER
