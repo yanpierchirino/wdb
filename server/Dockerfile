@@ -1,4 +1,4 @@
-FROM --platform=linux/arm64,linux/amd64 python:3
+FROM python:3.9.7
 
 ARG WDB_VERSION="3.3.1"
 
