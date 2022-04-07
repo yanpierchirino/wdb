@@ -350,10 +350,10 @@ for l in (
 ):
     l.setLevel(10 if tornado.options.options.debug else 30)
 
-if LibPythonWatcher:
-    LibPythonWatcher(
-        sys.base_prefix if tornado.options.options.extra_search_path else None
-    )
+# if LibPythonWatcher:
+#     LibPythonWatcher(
+#         sys.base_prefix if tornado.options.options.extra_search_path else None
+#     )
 
 server = tornado.web.Application(
     [
