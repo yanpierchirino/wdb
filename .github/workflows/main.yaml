@@ -25,3 +25,4 @@ jobs:
       - name: docker push
         run: |
           docker push $DOCKER_USER/wdb:1.0-$GITHUB_RUN_NUMBER
+
